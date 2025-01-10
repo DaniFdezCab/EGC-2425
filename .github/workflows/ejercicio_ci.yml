@@ -2,7 +2,10 @@ name: Run tests
 
 on:
   push:
-    branches: 
+    branches:
+      - config/ci
+  pull_request:
+    branches:
       - config/ci
 
 jobs:
